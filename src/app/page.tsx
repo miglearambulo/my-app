@@ -8,7 +8,9 @@ export default function Home() {
 
   <div className="flex gap-4 items-center flex-col sm:flex-row sm:justify-center w-full">
           <a
-            className="inline-flex items-center gap-2 font-medium text-sm sm:text-base hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
+            className="inline-flex This is a Next.js project bootstrapped with create-next-app.
+
+items-center gap-2 font-medium text-sm sm:text-base hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
             href="https://docs.google.com/presentation/d/1Ww185rw_FaBdVdC410-aKdALeOdAaIYYEUbxkYjwA-s/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
