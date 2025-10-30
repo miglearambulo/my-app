@@ -4,15 +4,13 @@ const nextConfig = {
   basePath: '/my-app',
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
   },
   assetPrefix: '/my-app',
   trailingSlash: true,
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false, path: false };
+    return config;
+  },
 }
 
 module.exports = nextConfig
