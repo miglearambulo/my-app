@@ -1,22 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import ColorPicker from "../components/colorpicker";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
   title: "Migle Arambulo",
-  description: "Portfolio",
+  description: "Portfolio - UX Designer & Developer",
+  authors: [{ name: "Migle Arambulo" }],
+  keywords: ["Portfolio", "UX Design", "Development", "Web Development"],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="antialiased min-h-dvh">
-        {children}
-        <ColorPicker />
+    <html lang="en" className={inter.variable}>
+      <body className={`antialiased min-h-dvh bg-[var(--bg)] text-[var(--fg)] transition-colors duration-200`}>
+        <div className="relative">
+          {children}
+          <ColorPicker />
+        </div>
       </body>
     </html>
   );
