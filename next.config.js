@@ -11,16 +11,8 @@ const nextConfig = {
   // Default config for Vercel deployment
   images: {
     domains: ['localhost'],
-    formats: ['image/avif', 'image/webp'],
   },
   reactStrictMode: true,
-  swcMinify: true,
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
-  },
-  experimental: {
-    optimizeCss: true,
-  },
 }
 
 module.exports = nextConfig
