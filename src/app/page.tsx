@@ -10,20 +10,23 @@ export default function Home() {
               Migle Arambulo
             </h1>
 
-            <nav className="relative group mr-4">
+            <nav className="relative group">
               <button
-                className="text-2xl sm:text-3xl font-bold text-neutral-900 dark:text-white hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors cursor-pointer"
+                className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-neutral-900 dark:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800/50 rounded-md transition-colors"
                 aria-haspopup="true"
               >
                 Projects
+                <svg className="w-3 h-3 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                </svg>
               </button>
-              <div className="absolute right-0 mt-3 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
-                <div className="py-3 bg-white dark:bg-neutral-900 rounded-xl shadow-lg">
+              <div className="absolute right-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
+                <div className="py-1 bg-white dark:bg-neutral-900 rounded-md shadow-lg ring-1 ring-neutral-200 dark:ring-neutral-800">
                   <a
                     href="https://docs.google.com/presentation/d/1Ww185rw_FaBdVdC410-aKdALeOdAaIYYEUbxkYjwA-s/edit?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block px-6 py-3 text-base text-neutral-900 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-800/50 transition-colors"
+                    className="block px-4 py-2 text-sm text-neutral-900 dark:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800/50 transition-colors"
                   >
                     CoinStructive Redesign
                   </a>
@@ -31,7 +34,7 @@ export default function Home() {
                     href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block px-6 py-3 text-base text-neutral-900 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-800/50 transition-colors"
+                    className="block px-4 py-2 text-sm text-white hover:bg-[#1c2128] transition-colors"
                   >
                     Chef
                   </a>

@@ -60,8 +60,8 @@ export default function ColorPicker() {
           boxShadow: '0 6px 24px rgba(0,0,0,0.2)',
           padding: '10px 12px',
           fontSize: 14,
-          background: 'var(--fg)',
-          color: 'var(--bg)',
+          background: 'var(--bg)',
+          color: 'var(--fg)',
           cursor: 'pointer',
         }}
       >
