@@ -5,28 +5,28 @@ export default function Home() {
     <div className="min-h-screen bg-white dark:bg-neutral-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-8 py-6 sm:py-8 flex flex-col min-h-screen">
         <header className="mb-8">
-          <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-row items-center justify-between gap-6">
             <h1 className="text-2xl sm:text-3xl font-bold text-neutral-900 dark:text-white">
               Migle Arambulo
             </h1>
 
             <nav className="relative group">
               <button
-                className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-neutral-900 dark:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800/50 rounded-md transition-colors"
+                className="inline-flex items-center gap-1 text-sm font-medium text-neutral-900 dark:text-white hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors whitespace-nowrap focus:outline-none"
                 aria-haspopup="true"
               >
                 Projects
-                <svg className="w-3 h-3 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-3 h-3 ml-0.5 transition-transform group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute right-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
-                <div className="py-1 bg-white dark:bg-neutral-900 rounded-md shadow-lg ring-1 ring-neutral-200 dark:ring-neutral-800">
+              <div className="absolute right-0 mt-2 min-w-[13rem] opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-150">
+                <div className="py-2 bg-white/90 dark:bg-neutral-900/90 rounded-md shadow-lg ring-1 ring-neutral-200/70 dark:ring-neutral-800/70 backdrop-blur-sm">
                   <a
                     href="https://docs.google.com/presentation/d/1Ww185rw_FaBdVdC410-aKdALeOdAaIYYEUbxkYjwA-s/edit?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block px-4 py-2 text-sm text-neutral-900 dark:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800/50 transition-colors"
+                    className="block px-3 py-2 text-sm font-medium text-neutral-900 dark:text-white hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors whitespace-nowrap"
                   >
                     CoinStructive Redesign
                   </a>
@@ -34,7 +34,7 @@ export default function Home() {
                     href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block px-4 py-2 text-sm text-white hover:bg-[#1c2128] transition-colors"
+                    className="block px-3 py-2 text-sm font-medium text-neutral-900 dark:text-white hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors whitespace-nowrap"
                   >
                     Chef
                   </a>
