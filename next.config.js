@@ -1,15 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  basePath: '/my-app',
+  // Enable static exports for GitHub Pages
+  ...(process.env.GITHUB_PAGES === 'true' && {
+    output: 'export',
+    basePath: '/my-app',
+    assetPrefix: '/my-app',
+    images: { unoptimized: true },
+  }),
+  
+  // Default config for Vercel deployment
   images: {
-    unoptimized: true,
+    domains: ['localhost'],
+    formats: ['image/avif', 'image/webp'],
   },
-  assetPrefix: '/my-app',
-  trailingSlash: true,
-  webpack: (config) => {
-    config.resolve.fallback = { fs: false, path: false };
-    return config;
+  reactStrictMode: true,
+  swcMinify: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+  experimental: {
+    optimizeCss: true,
   },
 }
 
