@@ -4,10 +4,15 @@ const nextConfig = {
   basePath: '/my-app',
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
-  assetPrefix: '/my-app/',
+  assetPrefix: '/my-app',
   trailingSlash: true,
-  distDir: 'out',
 }
 
 module.exports = nextConfig
