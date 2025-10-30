@@ -10,27 +10,32 @@ export default function Home() {
               Migle Arambulo
             </h1>
 
-            <nav className="flex flex-row items-center gap-4 sm:gap-6">
-              <div>
-                <a
-                  className="inline-flex items-center justify-center font-medium text-sm sm:text-base px-6 sm:px-8 py-2.5 sm:py-3 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
-                  href="https://docs.google.com/presentation/d/1Ww185rw_FaBdVdC410-aKdALeOdAaIYYEUbxkYjwA-s/edit?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  CoinStructive Redesign
-                </a>
-              </div>
-
-              <div>
-                <a
-                  className="inline-flex items-center justify-center font-medium text-sm sm:text-base px-6 sm:px-8 py-2.5 sm:py-3 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
-                  href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Chef
-                </a>
+            <nav className="relative group">
+              <button
+                className="text-2xl sm:text-3xl font-bold text-neutral-900 dark:text-white hover:text-neutral-700 dark:hover:text-neutral-200 transition-colors"
+                aria-haspopup="true"
+              >
+                Projects
+              </button>
+              <div className="absolute right-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
+                <div className="py-2 bg-white dark:bg-neutral-900 rounded-lg shadow-xl border border-neutral-200 dark:border-neutral-800">
+                  <a
+                    href="https://docs.google.com/presentation/d/1Ww185rw_FaBdVdC410-aKdALeOdAaIYYEUbxkYjwA-s/edit?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-sm text-neutral-900 dark:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                  >
+                    CoinStructive Redesign
+                  </a>
+                  <a
+                    href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-sm text-neutral-900 dark:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                  >
+                    Chef
+                  </a>
+                </div>
               </div>
             </nav>
           </div>
