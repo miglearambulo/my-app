@@ -10,24 +10,28 @@ export default function Home() {
               Migle Arambulo
             </h1>
 
-            <nav className="flex gap-6 sm:gap-8 items-center justify-center">
-              <a
-                className="inline-flex items-center justify-center font-medium text-sm sm:text-base px-6 sm:px-8 py-2.5 sm:py-3 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
-                href="https://docs.google.com/presentation/d/1Ww185rw_FaBdVdC410-aKdALeOdAaIYYEUbxkYjwA-s/edit?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CoinStructive Redesign
-              </a>
+            <nav className="flex flex-col sm:flex-row gap-4 sm:gap-12 items-center justify-center">
+              <div className="w-full sm:w-auto">
+                <a
+                  className="inline-flex w-full sm:w-auto items-center justify-center font-medium text-sm sm:text-base px-8 sm:px-10 py-3 sm:py-3.5 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
+                  href="https://docs.google.com/presentation/d/1Ww185rw_FaBdVdC410-aKdALeOdAaIYYEUbxkYjwA-s/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CoinStructive Redesign
+                </a>
+              </div>
 
-              <a
-                className="inline-flex items-center justify-center font-medium text-sm sm:text-base px-6 sm:px-8 py-2.5 sm:py-3 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chef
-              </a>
+              <div className="w-full sm:w-auto">
+                <a
+                  className="inline-flex w-full sm:w-auto items-center justify-center font-medium text-sm sm:text-base px-8 sm:px-10 py-3 sm:py-3.5 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
+                  href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Chef
+                </a>
+              </div>
             </nav>
           </div>
         </header>
