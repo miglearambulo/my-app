@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className={`antialiased min-h-dvh bg-[var(--bg)] text-[var(--fg)] transition-colors duration-200`}>
-        <div className="relative">
+    <html lang="en" className={`${inter.variable}`}>
+      <body className="antialiased min-h-dvh bg-white dark:bg-neutral-950 text-neutral-950 dark:text-neutral-50">
+        <div className="relative min-h-dvh">
           {children}
           <ColorPicker />
         </div>

@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans min-h-screen px-4 sm:px-8 py-8 sm:py-12 flex flex-col justify-between">
+    <div className="font-sans px-4 sm:px-8 py-8 sm:py-12 flex flex-col justify-between">
       <header className="w-full mb-8">
         <div className="max-w-3xl w-full mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-8">
           <h1 className="text-2xl sm:text-3xl font-bold">Migle Arambulo</h1>
 
             <nav className="flex gap-6 sm:gap-8 items-center justify-center">
               <a
-                className="inline-flex items-center justify-center font-medium text-sm sm:text-base px-6 sm:px-8 py-2.5 sm:py-3 rounded-full bg-[var(--button-bg)] hover:bg-[var(--button-hover)] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
+                className="inline-flex items-center justify-center font-medium text-sm sm:text-base px-6 sm:px-8 py-2.5 sm:py-3 rounded-full bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
                 href="https://docs.google.com/presentation/d/1Ww185rw_FaBdVdC410-aKdALeOdAaIYYEUbxkYjwA-s/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"

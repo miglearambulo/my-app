@@ -2,19 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --bg: #ffffff;
-  --fg: #171717;
-  --button-bg: rgba(0, 0, 0, 0.05);
-  --button-hover: rgba(0, 0, 0, 0.1);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --bg: #0a0a0a;
-    --fg: #ededed;
-    --button-bg: rgba(255, 255, 255, 0.05);
-    --button-hover: rgba(255, 255, 255, 0.1);
+    --background: 0 0% 100%;
+    --foreground: 0 0% 7%;
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 93%;
   }
 }
 
